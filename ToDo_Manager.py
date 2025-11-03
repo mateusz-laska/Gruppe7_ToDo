@@ -3,7 +3,6 @@ from pathlib import Path
 from datetime import datetime
 
 STORE = Path("todos.json")
-print(f"Datei wird gespeichert unter: {STORE.resolve()}")
 
 
 
