@@ -164,7 +164,7 @@ def filter_todos(todos):
     print("Filter options:")
     print("1. Filter by todo-status")
     print("2. Filter by Priority")
-    choice = input("Choose a filter option (1-3): ").strip()
+    choice = input("Choose a filter option (1/2): ").strip()
 
     if choice == '1':
         status = input("Enter status to filter by (open/done): ").strip().lower()
