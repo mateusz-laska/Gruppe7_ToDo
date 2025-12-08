@@ -140,6 +140,7 @@ def show_details(todos):
             print(f"Title: {t.title}")
             print(f"Description: {t.desc}")
             print(f"Priority: {t.prio}")
+            print(f"Category: {t.cat}")
             print(f"Status: {'Done' if t.done else 'Not Done'}")
             print(f"Created: {t.created}")
             return
@@ -158,6 +159,26 @@ def filter_prios(todos):
         else:
             print("No task with this priority found.")
             return
+        
+def filter_todos(todos):
+    print("Filter options:")
+    print("1. Filter by todo-status")
+    print("2. Filter by Priority")
+    choice = input("Choose a filter option (1-3): ").strip()
+
+    if choice == '1':
+        status = input("Enter status to filter by (open/done): ").strip().lower()
+        if status == "open":
+            list_todos(todos, filter_mode="open")
+        elif status == "done":
+            list_todos(todos, filter_mode="done")
+        else:
+            print("Invalid status option.")
+    elif choice == '2':
+        filter_prios(todos)
+    else:
+        print("Invalid filter option.")
+
     
 
 
@@ -166,13 +187,11 @@ def help_menu():
     print("""Available commands:
         1. View All Todos - List all todos with their status.
         2. Add Todo - Create a new todo item.
-        3. Show Open Todos - List only the todos that are not done.
-        4. Show Done Todos - List only the todos that are marked as done.
-        5. Search Todos - Search todos by keyword in title or description.
-        6. Change Todo Status - Mark a todo as done or not done by ID.
-        7. Show Todo Details - View detailed information of a todo by ID.
-        8. Delete Todo - Remove a todo item by ID.
-        9. Filter by Priority - Show todos filtered by priority level.
+        3. Filter Todos - Filter todos by status (open/done) or priority.
+        4. Search Todos - Search todos by keyword in title or description.
+        5. Change Todo Status - Mark a todo as done or not done by ID.
+        6. Show Todo Details - View detailed information of a todo by ID.
+        7. Delete Todo - Remove a todo item by ID.
         H. Help - Show this help menu.
         X. Exit - Close the application.""")
 
@@ -185,13 +204,11 @@ def main():
         print("\nOptions:")
         print("1. View All Todos")
         print("2. Add Todo")
-        print("3. Show Open Todos")
-        print("4. Show Done Todos")
-        print("5. Search Todos")
-        print("6. Change Todo Status")
-        print("7. Show Todo Details")
-        print("8. Delete Todo")
-        print("9. Filter by Priority (low, medium, high)")
+        print("3. Filter Todos")
+        print("4. Search Todos")
+        print("5. Change Todo Status")
+        print("6. Show Todo Details")
+        print("7. Delete Todo")
         print("H. Help")
         print("X. Exit")
         choice = input("Choose an option (1-9 or H or X): ").strip().upper()
@@ -201,20 +218,16 @@ def main():
         elif choice == '2':
             add_todo(todos)
         elif choice == '3':
-            list_todos(todos, filter_mode="open")
+            filter_todos(todos)
         elif choice == '4':
-            list_todos(todos, filter_mode="done")
-        elif choice == '5':
             query = input("Enter search query: ").strip()
             list_todos(todos, query=query)
-        elif choice == '6':
+        elif choice == '5':
             change_todo_status(todos)
-        elif choice == '7':
+        elif choice == '6':
             show_details(todos)
-        elif choice == '8':
+        elif choice == '7':
             delete_todo(todos)
-        elif choice == '9':
-            filter_prios(todos)
         elif choice == 'H':
             help_menu()
         elif choice == 'X':

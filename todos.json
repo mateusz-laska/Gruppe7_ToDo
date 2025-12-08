@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "id": 1,
+    "title": "Mathe",
+    "description": "Mahte",
+    "priority": "low",
+    "category": "Schule",
+    "done": false,
+    "created": "2025-12-08T09:18:45.679439"
+  }
+]
