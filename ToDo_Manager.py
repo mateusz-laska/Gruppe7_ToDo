@@ -82,8 +82,6 @@ def list_todos(todos, status="all", query=None):
         print(format_todo(t))
     print("-" * 60)
 
-# not looping when exception is thrown 
-# if not todos 
 def delete_todo(todos):
     notValid = True
     if todos == []:
@@ -133,7 +131,6 @@ def change_todo_status(todos):
 
     print("Todo ID not found.")
 
-#anpassen an verwendung von klassen
 def show_details(todos):
     try:
         todo_id = int(input("Enter the ID of the todo to view details: "))
