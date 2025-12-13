@@ -1,7 +1,8 @@
 from datetime import datetime
 
 class Task:
-
+    
+    # Creates the task object
     def __init__(self, id, title, desc, prio, cat, done=False, created=None):
         self.id = id
         self.title = title
@@ -11,6 +12,7 @@ class Task:
         self.done = done
         self.created = created or datetime.now().isoformat()
 
+    # Returns the object as a dictionary
     def to_dict(self):
         return {
             "id": self.id,
@@ -22,6 +24,8 @@ class Task:
             "created": self.created
         }
 
+    # Retuns a task object created for a dictonary
+    # @staticmethod because the function doesn't take a task object
     @staticmethod
     def from_dict(d):
         return Task(

@@ -250,6 +250,7 @@ def main():
             print("Invalid option. Please try again.")
 
 # Clears the terminal 
+# cls for windows otherwise use clear
 def clear_terminal():
     os.system("cls" if os.name == "nt" else "clear")
 
