@@ -127,7 +127,7 @@ def delete_task(todos):
 
     print("Todo ID not found.")
 
-# Changes the status of a task from false to true
+# Changes the status of a task
 def mark_task_done(todos):
     show_tasks(todos)
     try:
