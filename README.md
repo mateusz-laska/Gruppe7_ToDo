@@ -31,7 +31,26 @@ https://github.com/mateusz-laska/Gruppe9_ToDo
 
 ---
 
-## Features
+## Wichtige Funktionen
+
+load_todos(): 
+Liest die Todo Daten aus der Datei todos.json ein und gibt eine Liste von Task Objekten zurück.
+
+save_todos(todos): 
+Speichert alle aktuellen Todos persistent in der JSON Datei todos.json.
+
+add_todo(todos): 
+Interagiert mit dem Benutzer über die Konsole und erstellt ein neues Todo anhand der Benutzereingaben.
+
+list_todos(todos, status, query): 
+Verarbeitet und filtert Todos nach Status oder Suchbegriff und gibt sie formatiert in der Konsole aus.
+
+change_todo_status(todos): 
+Ändert den Status eines Todos von offen zu erledigt oder umgekehrt basierend auf der Benutzerinteraktion.
+
+---
+
+## Projektstruktur
 
 ```
 todo-manager-app
@@ -94,4 +113,5 @@ Die Datei wird automatisch erstellt und aktualisiert.
 ## Lizenz
 
 Dieses Projekt dient Ausbildungs und Lernzwecken und ist frei verwendbar.
+
 
