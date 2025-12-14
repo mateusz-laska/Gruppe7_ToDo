@@ -12,7 +12,7 @@ Benutzer können Todos anlegen, anzeigen, filtern, bearbeiten und löschen.
 Alle Daten werden lokal gespeichert, sodass der Zustand zwischen Programmausführungen erhalten bleibt.
 
 Repository
-[https://github.com/mateusz-laska/Gruppe9_ToDo](https://github.com/mateusz-laska/Gruppe7_ToDo)
+[https://github.com/mateusz-laska/Gruppe7_ToDo](https://github.com/mateusz-laska/Gruppe7_ToDo)
 
 ---
 
@@ -113,6 +113,7 @@ Die Datei wird automatisch erstellt und aktualisiert.
 ## Lizenz
 
 Dieses Projekt dient Ausbildungs und Lernzwecken und ist frei verwendbar.
+
 
 
 
