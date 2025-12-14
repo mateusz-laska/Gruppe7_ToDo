@@ -70,8 +70,8 @@ Voraussetzungen
 
 Repository klonen
 ```
-git clone https://github.com/mateusz-laska/Gruppe9_ToDo
-cd Gruppe9_ToDo
+git clone https://github.com/mateusz-laska/Gruppe7_ToDo
+cd Gruppe7_ToDo
 ```
 ---
 
@@ -113,6 +113,7 @@ Die Datei wird automatisch erstellt und aktualisiert.
 ## Lizenz
 
 Dieses Projekt dient Ausbildungs und Lernzwecken und ist frei verwendbar.
+
 
 
 
