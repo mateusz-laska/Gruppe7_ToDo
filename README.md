@@ -19,7 +19,7 @@ https://github.com/mateusz-laska/Gruppe9_ToDo
 ## Features
 
 - Erstellen neuer Todos mit Titel, Beschreibung, Kategorie und Priorität
-- Prioritäten low, medium, high
+- Prioritäten low, medium, high, critical
 - Anzeigen aller Todos
 - Filtern nach Status offen oder erledigt
 - Filtern nach Priorität
