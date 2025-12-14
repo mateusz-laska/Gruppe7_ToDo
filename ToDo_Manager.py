@@ -179,17 +179,15 @@ def filter_tasks(todos):
         return
     
     filtered = [t for t in todos if t.prio == todo_prio]
-
+    print("-" * 60)
     if not filtered:
-        print("-" * 60)
         print("No task with this priority found.")
         print("-" * 60)
         return
     
     for t in filtered:
-        print("-" * 60)
         print(format_todo(t))
-        print("-" * 60)
+    print("-" * 60)
     return
         
 # Menu with filter and change options
